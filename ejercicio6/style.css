@@ -1,0 +1,11 @@
+.logo {
+  position: relative;
+  width: 5%;
+  height: auto;
+  left: 9.5rem;
+  top: 9.5rem;
+}
+
+.base {
+  position: absolute;
+}

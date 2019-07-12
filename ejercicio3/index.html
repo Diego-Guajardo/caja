@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 2</title>
+    <style media="screen" type="text/css">
+
+      body {
+      margin: 1rem;
+      padding: 0;
+      }
+
+      p {
+        color: black;
+      }
+
+      .bandera {
+      height: 240px;
+      width: 400px;
+      }
+
+      /* españa */
+      .espana {
+        background: linear-gradient(red 30%, yellow 30%, yellow 70%, red 70%);
+        position: absolute;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* dinamarca */
+      .dinamarca {
+        background: red;
+        left: 40%;
+        position: relative;
+      }
+
+      .dinamarca-horizontal {
+        position: absolute;
+        width: 100%;
+        height: 15%;
+        background: white;
+        margin-top: 6rem;
+      }
+
+      .dinamarca-vertical {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        background: white;
+        left: 5rem;
+      }
+
+      /* emiratos arabes */
+      .emiratos-arabes {
+        background-image: white;
+        margin-top: 3rem;
+        position: absolute;
+      }
+
+      .emiratos-vertical {
+        position: absolute;
+        width: 7rem;
+        height: 15rem;
+        background: red;
+        z-index: 1
+      }
+
+      .emiratos-horizontal-1 {
+        z-index: 2
+        width: 100%;
+        height: 33%;
+        background: green;
+      }
+
+      .emiratos-horizontal-2 {
+        z-index: 3
+        width: 100%;
+        height: 33%;
+        background: black;
+        margin-top: 20%;
+      }
+
+      /* japon */
+      .japon {
+      	background-image:radial-gradient(circle, red 33%, white 33%, white);
+        border: grey 1px solid;
+        margin: 0;
+        left: 40%;
+        margin-top: 3rem;
+        position: relative;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <section class="bandera espana"></section>
+    <section class="bandera dinamarca">
+      <div class="dinamarca-vertical"></div>
+      <div class="dinamarca-horizontal"></div>
+    </section>
+    <section class="bandera emiratos-arabes">
+      <div class="emiratos-vertical"></div>
+      <div class="emiratos-horizontal-1"></div>
+      <div class="emiratos-horizontal-2"></div>
+    </section>
+    <section class="bandera japon"></section>
+  </body>
+</html>
